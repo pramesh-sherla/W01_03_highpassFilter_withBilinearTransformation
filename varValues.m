@@ -12,7 +12,7 @@ H_z = c2d(G_s,sampleTime,'tustin');      % Bilinear Transform
 
 figure(1);
 bode(G_s,H_z);                           % Frequency Response
-legend('Tranfer Function in s - Domain {G(s)}','Tranfer Function in s - Domain {H[z]}');
+legend('Tranfer Function in s - Domain {G(s)}','Tranfer Function in z - Domain {H[z]}');
 
 figure(2);
 step(G_s,H_z);                           % Step Response
